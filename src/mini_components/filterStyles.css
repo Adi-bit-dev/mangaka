@@ -1,0 +1,50 @@
+.filter-container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: 80%;
+    text-align: left;
+    max-width: 600px;
+}
+
+.filter-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+
+    margin-left: 5px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.filter-item {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+.filter-item:hover {
+    color: #007BFF;
+    /* Change text color on hover */
+    border-color: #007BFF;
+    /* Add a border color on hover */
+}
+
+.active {
+    color: #585858;
+    /* Active text color */
+    border-color: #ff5e00;
+    /* Active border color */
+}

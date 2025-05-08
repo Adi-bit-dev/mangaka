@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    color: #1a1a1a;
+    overflow-x: hidden;
+}
+
+.lst-icon {
+    height: 30px;
+    width: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lst-icon>img {
+    height: inherit;
+    width: inherit;
+}
+
+.cards-tapped-container {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: #f5f7fa;
+    padding: 20px;
+}
+
+/* Left Section */
+.first {
+    flex: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cover Image */
+.cover-comics {
+    height: 60vh;
+    width: 20vw;
+    margin-top: 15%;
+    background-image: url("../assets/test.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Bookmark Button */
+.bookmark-comic {
+    background-color: rgb(181, 201, 219);
+    color: black;
+    min-height: 40px;
+    min-width: 56%;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1.38em;
+    font-weight: 500;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    padding: 20px;
+}
+
+.bookmark-comic:hover {
+    background-color: rgb(137, 153, 167);
+}
+
+/* Middle Section */
+.mid {
+    flex: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    padding: 40px;
+
+    transform: scale(0.92);
+}
+
+/* Common Text Block */
+.same {
+    position: absolute;
+    left: 8px;
+    width: 100%;
+    text-align: left;
+    color: #333;
+
+    padding: 5px;
+}
+
+/* Individual Blocks */
+.title-lst {
+    font-size: 2em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.title-lst> :nth-child(1),
+.status> :nth-child(1),
+.ratings> :nth-child(1),
+.author> :nth-child(1) {
+    margin-right: 15px;
+    font-weight: 500;
+    color: #555;
+}
+
+.description {
+    top: 25%;
+    font-size: 1.7em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 34px;
+}
+
+.description> :nth-child(1) {
+    position: static;
+    font-weight: bold;
+}
+
+.description-target {
+    min-height: 200px;
+    width: 90%;
+    background-color: #e0f7fa;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+
+/* Scroll styling */
+.description-target::-webkit-scrollbar {
+    width: 8px;
+}
+
+.description-target::-webkit-scrollbar-thumb {
+    background-color: #a7c7cc;
+    border-radius: 6px;
+}
+
+/* Remaining Info Blocks */
+.status {
+    top: 470px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.ratings {
+    top: 520px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.highlight {
+    color: black;
+}
+
+.author {
+    top: 570px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.pain-releaver{
+    margin-top: 10px;
+}
+
+/* Right Section Placeholder */
+.lt {
+    flex: 1;
+    height: 100vh;
+    /* background-color: #d0b3ff; */
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.section-same {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    /* background-color: #333; */
+    gap: 5px;
+}
+
+.mini-info {
+    background-color: #c2d6da;
+    border-radius: 10px;
+
+    height: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mini-info>.title {
+    font-size: 1.7em;
+    margin-left: 5px;
+}
+
+.mini-episode {
+    flex: 1;
+
+    /* background-color: #c51e1e; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.ep {
+    margin-left: 8px;
+    font-size: 1.12em;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.mini-episode> :first-child {
+    margin-top: 6px;
+}
+
+.title-target {
+    display: inline;
+    align-self: baseline;
+}
+
+.title-lst> :nth-child(1) {
+    align-self: baseline;
+}
+
+@media (max-width: 826px) {
+    .cards-tapped-container {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .cover-comics {
+        /* width: 450px;
+        height: 600px; */
+        width: 600px;
+        height: 750px;
+    }
+
+    .bookmark-comic {
+        width: 100%;
+
+        padding: 20px;
+        font-size: 1.8em;
+    }
+
+    .mid {
+        width: 100%;
+
+        margin-top: 3vh;
+    }
+
+    .lt {
+        flex-direction: row;
+
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .section-same {
+        flex-direction: column;
+    }
+
+    .cards {
+        min-height: 200px;
+        min-width: 300px;
+    }
+    .mini-info{
+        width: 100%;
+    }
+    .description-target{
+        width: 100%;
+    }
+}
