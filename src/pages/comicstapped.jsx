@@ -54,7 +54,7 @@ function Comicstapped() {
             <div className="lt">
 
                 <div className="section-same">
-                    <div className="cards first-cards"></div>
+                    <div className="cards first-cards imp"></div>
                     <div className="mini-info">
                         <div className="title first-title">This is title</div>
                         <div className="ratings first-ratings">
@@ -68,7 +68,7 @@ function Comicstapped() {
                 </div>
 
                 <div className="section-same">
-                    <div className="cards second-cards"></div>
+                    <div className="cards second-cards imp"></div>
                     <div className="mini-info">
                         <div className="title second-title">This is title</div>
                         <div className="ratings second-rating">
@@ -82,7 +82,7 @@ function Comicstapped() {
                 </div>
 
                 <div className="section-same">
-                    <div className="cards third-cards"></div>
+                    <div className="cards third-cards imp"></div>
                     <div className="mini-info">
                         <div className="title third-title">This is title</div>
                         <div className="ratings third-ratings">
@@ -96,7 +96,7 @@ function Comicstapped() {
                 </div>
 
                 <div className="section-same">
-                    <div className="cards fourth-cards"></div>
+                    <div className="cards fourth-cards imp"></div>
                     <div className="mini-info">
                         <div className="title fourth-title">This is title</div>
                         <div className="ratings fourth-ratings">
@@ -110,7 +110,7 @@ function Comicstapped() {
                 </div>
 
                 <div className="section-same">
-                    <div className="cards fifth-cards"></div>
+                    <div className="cards fifth-cards imp"></div>
                     <div className="mini-info">
                         <div className="title fifth-title">This is title</div>
                         <div className="ratings fifth-ratings">
@@ -124,7 +124,7 @@ function Comicstapped() {
                 </div>
 
                 <div className="section-same">
-                    <div className="cards sixth-cards"></div>
+                    <div className="cards sixth-cards imp"></div>
                     <div className="mini-info">
                         <div className="title sixth-title">This is title</div>
                         <div className="ratings sixth-ratings">
@@ -138,7 +138,7 @@ function Comicstapped() {
                 </div>
 
                 <div className="section-same">
-                    <div className="cards seventh-cards"></div>
+                    <div className="cards seventh-cards imp"></div>
                     <div className="mini-info">
                         <div className="title seventh-title">This is title</div>
                         <div className="ratings seventh-ratings">

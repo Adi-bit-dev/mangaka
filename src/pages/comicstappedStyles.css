@@ -15,6 +15,10 @@ body {
     overflow-x: hidden;
 }
 
+.imp{
+    height: 140px;
+    width: 108px;
+}
 .lst-icon {
     height: 30px;
     width: 30px;
