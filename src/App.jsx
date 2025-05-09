@@ -16,7 +16,8 @@ function App() {
   return (
     <>
       {/* {isloggedin ? <MainPage /> : <Auth />} */}
-    <Comicstapped />
+      {/* <Comicstapped /> */}
+      <Auth />
     </>
   )
 }

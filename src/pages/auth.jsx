@@ -28,10 +28,10 @@ function Auth() {
   const [showmessage, setShowmessage] = useState(false);
 
   function handleLogin() {
-    const uname = document.getElementById("user_name").value.trim();
+    const email = document.getElementById("email").value.trim();
     const pwd = document.getElementById("password").value.trim();
 
-    if (uname !== '' && pwd !== '') {
+    if (email !== '' && pwd !== '') {
       setShowmessage(false);
       localStorage.setItem('isloggedin', 'true');
       window.location.reload(); // to trigger MainPage render in App.jsx
@@ -39,7 +39,6 @@ function Auth() {
       setShowmessage(true);
     }
   }
-
 
   return (
     <div className="parent">
@@ -49,8 +48,8 @@ function Auth() {
         </div>
         <div className="two">
           <div className="frm">
-            <div className="upper">Username</div>
-            <input type="text" placeholder="Enter your username" spellCheck="false" id="user_name" />
+            <div className="upper">Email</div>
+            <input type="text" placeholder="Enter your email" spellCheck="false" id="email" />
           </div>
           <div className="frm">
             <div className="upper">Password</div>
