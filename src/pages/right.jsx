@@ -79,23 +79,23 @@ function Right() {
             </div>
             <div className="popular">
                 <div className="title"><div>New Releases</div></div>
-                <div className="up special-second">
-                    <div className="cards new">
+                <div className="up special-second overflow-x">
+                    <div className="cards new special">
                         <div className="new-cover"></div>
                         <div className="card-title">Alya sometimes hides her feelings in Russian</div>
                     </div>
 
-                    <div className="cards new scnd">
+                    <div className="cards new scnd special">
                         <div className="new-cover"></div>
                         <div className="card-title">The count's seceret maid</div>
                     </div>
 
-                    <div className="cards new">
+                    <div className="cards new special">
                         <div className="new-cover"></div>
                         <div className="card-title">Alya sometimes hides her feelings in Russian</div>
                     </div>
 
-                    <div className="cards new scnd">
+                    <div className="cards new scnd special">
                         <div className="new-cover"></div>
                         <div className="card-title">The count's seceret maid</div>
                     </div>

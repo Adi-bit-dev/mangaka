@@ -11,13 +11,14 @@ import Comicstapped from './pages/comicstapped'
 // good luck :)
 
 function App() {
-  // const isloggedin = localStorage.getItem('isloggedin') === 'true';
+  const isloggedin = localStorage.getItem('isloggedin') === 'true';
 
   return (
     <>
       {/* {isloggedin ? <MainPage /> : <Auth />} */}
-      {/* <Comicstapped /> */}
-      <Auth />
+      {/* for your convenience you can access the two pages from here */}
+      <Comicstapped />
+      <MainPage />
     </>
   )
 }

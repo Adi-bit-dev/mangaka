@@ -50,6 +50,7 @@
     margin-left: 10px;
 
     gap: 20px;
+    max-width: 264px;
 }
 
 .account {
