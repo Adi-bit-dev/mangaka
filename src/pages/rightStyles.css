@@ -1,0 +1,145 @@
+.right-container {
+    flex: 4.5;
+    background-color: aliceblue;
+    height: 87vh;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* more appropriate for scroll */
+    gap: 55vh;
+    /* Adds spacing between .latest-updates and .popular */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 808px) {
+    .right-container {
+        height: 100%;
+    }
+
+    .cards {
+        width: calc(50% - 12px) !important;
+    }
+
+    .right-container {
+        gap: 5vh;
+    }
+
+    body {
+        overflow-y: scroll;
+    }
+
+    .special-second {
+        width: 97%;
+        flex-wrap: wrap;
+    }
+
+    .first-up {
+        width: 542px;
+        overflow-x: scroll;
+    }
+
+    /* Scrollbar track */
+    .first-up::-webkit-scrollbar {
+        width: 12px;
+        /* vertical scrollbar width */
+        height: 5px;
+        /* horizontal scrollbar height */
+    }
+
+    .first-section-cards {
+        flex: 0 0 auto;
+        width: 268px !important;
+    }
+
+}
+
+@media (max-width: 1264px) and (min-width: 812px) {
+    .cards {
+        width: calc(48% - 12px) !important;
+    }
+
+    .right-container {
+        gap: 64vh;
+    }
+}
+
+@media (max-width: 1647) {
+    .content {
+        width: auto;
+    }
+}
+
+@media (min-width: 1562px) {
+    .content {
+        width: 77%;
+    }
+}
+
+@media (min-width: 2595px) {
+    .cards{
+        width: calc(18% - 12px) !important;
+    }
+    .content{
+        left: 533px;
+    }
+    .card-main{
+        width: 500px;
+    }
+}
+
+/* Section base styling */
+.latest-updates,
+.popular {
+    width: 100%;
+    min-height: 200px;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    /* Remove margin-top from .popular */
+}
+
+.scnd> :nth-child(1) {
+    background-image: url("../assets/test2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second {
+    background-image: url("../assets/test2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Title styling */
+.title {
+    font-size: 2.5em;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.title>div {
+    margin-left: 15px;
+    font-size: 1.6em;
+}
+
+/* Cards wrapper */
+.up {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 16px;
+    padding: 16px;
+    justify-content: flex-start;
+}
+
+.vertical {
+    flex-direction: column;
+}

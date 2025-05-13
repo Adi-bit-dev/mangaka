@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+body{
+    overflow-y: hidden;
+    min-width: auto;
+}
+
+@media (max-width: 790px) {
+    body{
+        min-height: unset !important;
+    }
+}
+
+.one>div {
+    margin-top: 10px;
+}
+.conditional-text{
+    color: red;
+    align-self: baseline;
+    margin-left: 5px;
+}
+.box {
+    width: 30vw;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for better contrast */
+    padding: 20px;
+    /* Padding for spacing */
+    backdrop-filter: blur(8px);
+    transform: translateY(10px);
+    opacity: 0;
+    animation: slideUp 0.6s forwards;
+
+    padding-bottom: 25px;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 2.8em;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.two {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frm {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.upper {
+    margin-left: 4.5px;
+    padding-bottom: 5px;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 5px;
+    border-bottom: 3px solid #ccc;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+    padding-left: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+input:focus {
+    border-bottom: 3px solid #ff7e5f;
+    /* Color when input is focused */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+    /* Glow effect */
+}
+
+.txt {
+    align-self: flex-end;
+    margin-right: 10px;
+    font-family: sans-serif;
+    color: #ff7e5f;
+    /* Text color for "Forgot password?" */
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.txt:hover {
+    color: #feb47b;
+    /* Change color on hover */
+}
+
+.login_but {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+    margin-top: 8px;
+}
+
+.login_but:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    /* Reverse gradient on hover */
+    transform: scale(1.05);
+    /* Slight scaling effect */
+}
+
+.login_but:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Focus effect */
+}
+
+.four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: fadeInUp 1s ease-in-out;
+    gap: 10px;
+}
+
+.four> :nth-child(2) {
+    color: #333;
+    cursor: pointer;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+
+    padding: 10px;
+    border: 0.2px solid grey;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.four> :nth-child(2):hover {
+    color: #ff7e5f;
+    /* Hover color for sign-up link */
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: box-shadow 0.3s ease;
+}
+
+.google-btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.google-logo {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* Animations */
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .box {
+        width: 80vw;
+        /* Make the box wider for mobile screens */
+        min-height: 60vh;
+        /* Adjust height for smaller screens */
+        padding: 15px;
+        /* Less padding for mobile */
+    }
+
+    .one {
+        font-size: 2.5em;
+        /* Smaller title font size */
+    }
+
+    .upper {
+        font-size: 1em;
+        /* Smaller font size for labels */
+    }
+
+    .input {
+        font-size: 0.9em;
+        /* Smaller input font size */
+    }
+
+    .login_but {
+        font-size: 1.1em;
+        /* Adjust button text size */
+    }
+
+    .four {
+        font-size: 0.9em;
+        /* Slightly smaller font size for footer links */
+    }
+
+    .four> :nth-child(2) {
+        font-size: 1em;
+        /* Adjust sign-up link font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 90vw;
+        /* Even wider for very small screens */
+        min-height: 70vh;
+        /* Increase height for better fit */
+        padding: 10px;
+        /* Smaller padding for mobile */
+    }
+
+    .one {
+        font-size: 2.2em;
+        /* Adjust title size for small screens */
+    }
+
+    .frm {
+        margin-top: 8px;
+        /* Reduced margin for inputs */
+    }
+
+    .upper {
+        font-size: 0.9em;
+        /* Even smaller font for labels */
+    }
+
+    .login_but {
+        font-size: 1.1em;
+        /* Ensure button is readable */
+    }
+
+    .four {
+        font-size: 0.8em;
+        /* Even smaller footer text */
+    }
+
+    .four> :nth-child(2) {
+        font-size: 1.1em;
+        /* Make the sign-up link text larger */
+    }
+}

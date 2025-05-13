@@ -1,0 +1,41 @@
+.main-container {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lower {
+    flex: 8;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 790px) {
+    body {
+        min-height: 222vh;
+        /* min-width: 221vw; */
+    }
+    .main-container{
+        min-height: 220vh;
+    }
+}
+
+.popular {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.padding-top {
+    margin-top: 24px;
+}

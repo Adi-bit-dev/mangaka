@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanchenjunga:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide in from right (for title) */
+@keyframes slideInRight {
+  from {
+    transform: translateX(25%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ===== General Card Styling ===== */
+
+.cards {
+  width: calc(25% - 12px);
+
+  aspect-ratio: 3 / 4;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+
+  /* Transition for hover smoothness */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Pop Effect */
+.cards:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Entry animation class (applied on reload) */
+.slideup-animation {
+  animation: slideInUp 0.5s ease-out;
+}
+
+/* ===== Specific Card (first-card) ===== */
+
+.first-card {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2xY-sxerThXn5Vvj9K9jy10Bg2uJdkfRsng&s");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* ===== Overlay & Inner Content ===== */
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.801);
+  color: white;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.fst {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.manga-title {
+  position: absolute;
+  left: 8px;
+  font-size: 170%;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+}
+
+.lst {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.lst>div {
+  position: absolute;
+  transform: scale(1.8);
+  left: 32px;
+}
+
+/* ===== Title Section ===== */
+
+.title {
+  animation: slideInRight 0.28s ease-out forwards;
+}
+
+.new-cover {
+  width: 100%;
+  height: 100%;
+
+  /* background-color: black; */
+  background-image: url("https://m.media-amazon.com/images/M/MV5BNjg0YTVjNTItZTI1ZC00MDZlLTllYjQtMDY0ODMxNDdlYjY3XkEyXkFqcGc@._V1_QL75_UY281_CR1,0,190,281_.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.new {
+  padding-bottom: 50px;
+}
+
+.card-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  padding: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.card-main {
+  height: 378px;
+  width: 253px;
+}
+
+.special {
+  min-width: 250px !important;
+}
+
+.overflow-x {
+  min-height: fit-content;
+  overflow-x: scroll;
+}
+
+.overflow-x::-webkit-scrollbar {
+  width: 12px;
+  /* vertical scrollbar width */
+  height: 5px;
+  /* horizontal scrollbar height */
+}
+
+.main-first-card {
+  background-image: url("https://m.media-amazon.com/images/M/MV5BOTczMjM3MDUtYmZjMC00YzZhLWE4ODQtNjg5YWU4NTJjNzY2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg");
+  background-position: center center;
+  background-size: cover;
+
+  border-radius: 10px;
+}
+
+.section-lst {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.content {
+  background-color: rgb(209, 219, 228);
+  position: absolute;
+
+  left: 266px;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  /* width: auto; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title-last {
+  flex: 1;
+  background-color: rgba(202, 202, 226, 0.774);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin: 10px;
+  border-radius: 25px;
+  /* height: 50%; */
+}
+
+.title-last> :nth-child(1) {
+  /* flex: 1; */
+  text-align: left;
+  width: 90%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
+  font-size: 1.88em;
+  margin-left: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin-top: 15px;
+}
+
+.title-last> :nth-child(2) {
+  flex: 1;
+  width: 35%;
+
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 14px;
+  font-size: 2.8em;
+}
+
+.episodes {
+  flex: 5;
+  background-color: rgba(209, 209, 233, 0.801);
+
+  margin: 10px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 20px;
+
+  overflow-y: scroll;
+}
+
+.line-text {
+  font-family: "Roboto", sans-serif;
+
+  margin-left: 20px;
+  font-size: 1.6em;
+  padding: 5px;
+
+  /* background-color: rgb(191, 191, 218); */
+
+  border-radius: 15px;
+  padding: 12px;
+
+  display: flex;
+  align-items: flex-end;
+
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.line-text:hover {
+  transform: scale(1.058);
+  cursor: pointer;
+
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.line-text>div {
+  margin-left: 15px;
+  color: #333333;
+}
+
+@media (max-width: 992px) {
+  .section-lst {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card-main {
+    align-self: baseline;
+  }
+
+  .content {
+    height: 450px;
+    position: relative;
+    left: 0px;
+  }
+}
